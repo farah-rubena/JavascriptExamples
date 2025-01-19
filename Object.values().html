@@ -6,19 +6,21 @@
     <title>Document</title>
   </head>
   <body>
-    <h2>Adding Methods to Object</h2>
+    <h2>Object.values()</h2>
+    <p>Returns an Array of values from an object</p>
+    <p id="demo"></p>
 
+    <!-- #create an object -->
     <script>
       const myPerson = {
         name: "farah",
-        city: "Mumbai",
+        city: "New York",
+        age: 30,
       };
 
-      myPerson.location = function () {
-        return this.name + " lives in " + this.city;
-      };
+      const objValues = Object.values(myPerson);
 
-      console.log(myPerson.location());
+      document.getElementById("demo").innerHTML = objValues;
     </script>
   </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JSON.stringify() converts Javascript Objects to Strings</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      const myPerson = {
+        name: "Unknown",
+        age: 36,
+        city: "New York",
+      };
+
+      let text = JSON.stringify(myPerson);
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>

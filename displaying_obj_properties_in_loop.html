@@ -6,19 +6,23 @@
     <title>Document</title>
   </head>
   <body>
-    <h2>Adding Methods to Object</h2>
+    <h2>Displaying Properties using FOR Loop</h2>
 
+    <p id="demo"></p>
+
+    <!-- creating an object -->
     <script>
       const myPerson = {
         name: "farah",
-        city: "Mumbai",
+        city: "mumbai",
       };
 
-      myPerson.location = function () {
-        return this.name + " lives in " + this.city;
-      };
+      let text = "";
+      for (x in myPerson) {
+        text += myPerson[x] + " ";
+      }
 
-      console.log(myPerson.location());
+      document.getElementById("demo").innerHTML = text;
     </script>
   </body>
 </html>

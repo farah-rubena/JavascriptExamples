@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Object.entries()</h2>
+    <p>converts an Object into an Array of key:value pairs</p>
+    <p id="demo"></p>
+
+    <script>
+      const myCity = {
+        name: "Panchi",
+        district: "Satara",
+        state: "maharashtra",
+      };
+
+      let text = "";
+      for (let [property, value] of Object.entries(myCity)) {
+        text += property + ": " + value + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>

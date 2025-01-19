@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Using toUpper Case Method</h2>
+
+    <p id="demo"></p>
+    <!-- creating an object -->
+    <script>
+      const myParent = {
+        firstName: "Farah",
+        lastName: "Rubena",
+      };
+
+      // Adding method
+      myParent.fullName = function () {
+        return "My mother's name is " + this.firstName.toUpperCase();
+      };
+
+      document.getElementById("demo").innerHTML = myParent.fullName();
+    </script>
+  </body>
+</html>

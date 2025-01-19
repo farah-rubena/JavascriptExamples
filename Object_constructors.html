@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Javascript Object Constructors</h2>
+    <p>
+      Creates object from Blueprint allowing reusable structures with Properties
+      & Methods
+    </p>
+
+    <p id="demo"></p>
+    <!-- create object constructor -->
+    <script>
+      function myPerson(name, age, city) {
+        this.personName = name;
+        this.personAge = age;
+        this.personCity = city;
+      }
+
+      // create a person object
+      const personOne = new myPerson("farah", 30, "mumbai");
+
+      document.getElementById("demo").innerHTML = personOne.personName;
+    </script>
+  </body>
+</html>
