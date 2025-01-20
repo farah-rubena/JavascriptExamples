@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Adding Properties to objects</h2>
+    <p id="demo"></p>
+    <script>
+      // create constructor function
+      function MyPerson(name, age, city) {
+        this.personName = name;
+        this.personAge = age;
+        this.personCity = city;
+      }
+
+      //   create multiple objects from above constructor function
+
+      const personOne = new MyPerson("farah", 30, "New York");
+      const personTwo = new MyPerson("Rusu", 5, "Dubai");
+
+      //   Adding additional Property to object
+      personTwo.locality = "Burj Khaifa";
+
+      //   Displaying details
+      document.getElementById("demo").innerHTML =
+        personTwo.personName + " lives near " + personTwo.locality;
+    </script>
+  </body>
+</html>

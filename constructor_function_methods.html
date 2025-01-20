@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Adding Method to a Constructor</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      // Create constructor fucntion
+      function MyPerson(fname, lname, age, city) {
+        this.personFname = fname;
+        this.personLname = lname;
+        this.personAge = age;
+        this.personCity = city;
+        this.personFullname = function () {
+          return this.personFname + " " + this.personLname;
+        };
+      }
+
+      //   creating Object
+      const personOne = new MyPerson("farah", "rubena", 30, "newyork");
+
+      //   Displaying details
+      document.getElementById("demo").innerHTML = personOne.personFullname();
+    </script>
+  </body>
+</html>

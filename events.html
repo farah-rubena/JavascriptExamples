@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function textChange() {
+        document.getElementById("demo").textContent =
+          "This content has been changed!";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Javascript Events</h2>
+    <p id="demo">Original Content!</p>
+    <button type="button" onclick="textChange()">Change Content!</button>
+  </body>
+</html>
