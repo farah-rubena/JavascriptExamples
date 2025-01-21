@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Strings as Objects</h2>
+    <p>Create strings as objects using keyword new</p>
+    <p id="demo"></p>
+    <script>
+      let x = "Farah";
+      let y = new String("Farah");
+      document.getElementById("demo").innerHTML =
+        x +
+        " " +
+        y +
+        "<br>" +
+        typeof x +
+        " " +
+        typeof y +
+        "<br>" +
+        `x is of type ${typeof x} and y is of type ${typeof y}`;
+    </script>
+  </body>
+</html>
